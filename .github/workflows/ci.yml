@@ -31,6 +31,7 @@ on:
       bazel_version:
         description: Version of Bazel to use
         type: string
+        default: '6.5.0'
 
 env:
   # Default Bazel version to use.
@@ -126,7 +127,9 @@ jobs:
         disk-cache: ${{ github.workflow }}
         repository-cache: true
         bazelisk-version: 1.x
-    - run: bazel build :all
+    - env:
+        USE_BAZEL_VERSION: ${{inputs.bazel_version || env.bazel_version}}
+      run: bazel build :all
     - run: bazel test :chromobius_test
   build_clang:
     runs-on: ubuntu-24.04
