@@ -16,6 +16,7 @@
 
 #include <algorithm>
 #include <random>
+#include <algorithm>
 
 #include "gtest/gtest.h"
 
