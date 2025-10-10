@@ -14,7 +14,9 @@
 
 #include "chromobius/datatypes/atomic_error.h"
 
+#include <algorithm>
 #include <random>
+#include <algorithm>
 
 #include "gtest/gtest.h"
 
