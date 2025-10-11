@@ -46,60 +46,62 @@ jobs:
       fail-fast: false
       matrix:
         build: [
-          {os: ubuntu-latest, dist: cp310-manylinux_x86_64, arch: x86_64},
-          {os: ubuntu-latest, dist: cp311-manylinux_x86_64, arch: x86_64},
-          {os: ubuntu-latest, dist: cp312-manylinux_x86_64, arch: x86_64},
-          {os: ubuntu-latest, dist: cp313-manylinux_x86_64, arch: x86_64},
-          {os: ubuntu-latest, dist: cp314-manylinux_x86_64, arch: x86_64},
+          # {os: ubuntu-latest, dist: cp310-manylinux_x86_64, arch: x86_64},
+          # {os: ubuntu-latest, dist: cp311-manylinux_x86_64, arch: x86_64},
+          # {os: ubuntu-latest, dist: cp312-manylinux_x86_64, arch: x86_64},
+          # {os: ubuntu-latest, dist: cp313-manylinux_x86_64, arch: x86_64},
+          # {os: ubuntu-latest, dist: cp314-manylinux_x86_64, arch: x86_64},
 
-          {os: ubuntu-latest, dist: cp310-manylinux_aarch64, arch: aarch64},
-          {os: ubuntu-latest, dist: cp311-manylinux_aarch64, arch: aarch64},
-          {os: ubuntu-latest, dist: cp312-manylinux_aarch64, arch: aarch64},
-          {os: ubuntu-latest, dist: cp313-manylinux_aarch64, arch: aarch64},
-          {os: ubuntu-latest, dist: cp314-manylinux_aarch64, arch: aarch64},
+          # {os: ubuntu-latest, dist: cp310-manylinux_aarch64, arch: aarch64},
+          # {os: ubuntu-latest, dist: cp311-manylinux_aarch64, arch: aarch64},
+          # {os: ubuntu-latest, dist: cp312-manylinux_aarch64, arch: aarch64},
+          # {os: ubuntu-latest, dist: cp313-manylinux_aarch64, arch: aarch64},
+          # {os: ubuntu-latest, dist: cp314-manylinux_aarch64, arch: aarch64},
 
-          {os: macos-13, dist: cp310-macosx_x86_64, arch: x86_64, target: '10.15'},
-          {os: macos-13, dist: cp311-macosx_x86_64, arch: x86_64, target: '10.15'},
-          {os: macos-13, dist: cp312-macosx_x86_64, arch: x86_64, target: '10.15'},
-          {os: macos-13, dist: cp313-macosx_x86_64, arch: x86_64, target: '10.15'},
-          {os: macos-13, dist: cp314-macosx_x86_64, arch: x86_64, target: '10.15'},
+          # {os: macos-13, dist: cp310-macosx_x86_64, arch: x86_64, target: '10.15'},
+          # {os: macos-13, dist: cp311-macosx_x86_64, arch: x86_64, target: '10.15'},
+          # {os: macos-13, dist: cp312-macosx_x86_64, arch: x86_64, target: '10.15'},
+          # {os: macos-13, dist: cp313-macosx_x86_64, arch: x86_64, target: '10.15'},
+          # {os: macos-13, dist: cp314-macosx_x86_64, arch: x86_64, target: '10.15'},
 
-          {os: macos-14, dist: cp310-macosx_arm64, arch: arm64, target: '10.15'},
-          {os: macos-14, dist: cp311-macosx_arm64, arch: arm64, target: '10.15'},
-          {os: macos-14, dist: cp312-macosx_arm64, arch: arm64, target: '10.15'},
-          {os: macos-14, dist: cp313-macosx_arm64, arch: arm64, target: '10.15'},
-          {os: macos-14, dist: cp314-macosx_arm64, arch: arm64, target: '10.15'},
+          # {os: macos-14, dist: cp310-macosx_arm64, arch: arm64, target: '10.15'},
+          # {os: macos-14, dist: cp311-macosx_arm64, arch: arm64, target: '10.15'},
+          # {os: macos-14, dist: cp312-macosx_arm64, arch: arm64, target: '10.15'},
+          # {os: macos-14, dist: cp313-macosx_arm64, arch: arm64, target: '10.15'},
+          # {os: macos-14, dist: cp314-macosx_arm64, arch: arm64, target: '10.15'},
 
-          {os: macos-15, dist: cp310-macosx_arm64, arch: arm64, target: '11.0'},
-          {os: macos-15, dist: cp311-macosx_arm64, arch: arm64, target: '11.0'},
-          {os: macos-15, dist: cp312-macosx_arm64, arch: arm64, target: '11.0'},
-          {os: macos-15, dist: cp313-macosx_arm64, arch: arm64, target: '11.0'},
-          {os: macos-15, dist: cp314-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-15, dist: cp310-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-15, dist: cp311-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-15, dist: cp312-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-15, dist: cp313-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-15, dist: cp314-macosx_arm64, arch: arm64, target: '11.0'},
 
-          {os: macos-26, dist: cp310-macosx_arm64, arch: arm64, target: '11.0'},
-          {os: macos-26, dist: cp311-macosx_arm64, arch: arm64, target: '11.0'},
-          {os: macos-26, dist: cp312-macosx_arm64, arch: arm64, target: '11.0'},
-          {os: macos-26, dist: cp313-macosx_arm64, arch: arm64, target: '11.0'},
-          {os: macos-26, dist: cp314-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-26, dist: cp310-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-26, dist: cp311-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-26, dist: cp312-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-26, dist: cp313-macosx_arm64, arch: arm64, target: '11.0'},
+          # {os: macos-26, dist: cp314-macosx_arm64, arch: arm64, target: '11.0'},
 
-          {os: windows-latest, dist: cp310-win_amd64, arch: AMD64},
+#          {os: windows-latest, dist: cp310-win_amd64, arch: AMD64},
           {os: windows-latest, dist: cp311-win_amd64, arch: AMD64},
           {os: windows-latest, dist: cp312-win_amd64, arch: AMD64},
           {os: windows-latest, dist: cp313-win_amd64, arch: AMD64},
           {os: windows-latest, dist: cp314-win_amd64, arch: AMD64},
 
-          {os: windows-latest, dist: cp310-win_arm64, arch: ARM64},
-          {os: windows-latest, dist: cp311-win_arm64, arch: ARM64},
-          {os: windows-latest, dist: cp312-win_arm64, arch: ARM64},
-          {os: windows-latest, dist: cp313-win_arm64, arch: ARM64},
-          {os: windows-latest, dist: cp314-win_arm64, arch: ARM64},
+          # {os: windows-latest, dist: cp310-win_arm64, arch: ARM64},
+          # {os: windows-latest, dist: cp311-win_arm64, arch: ARM64},
+          # {os: windows-latest, dist: cp312-win_arm64, arch: ARM64},
+          # {os: windows-latest, dist: cp313-win_arm64, arch: ARM64},
+          # {os: windows-latest, dist: cp314-win_arm64, arch: ARM64},
         ]
     env:
-      MACOSX_DEPLOYMENT_TARGET: ${{matrix.build.target}}
+      # MACOSX_DEPLOYMENT_TARGET: ${{matrix.build.target}}
       CIBW_BUILD: ${{matrix.build.dist}}
       CIBW_ARCHS: ${{matrix.build.arch}}
       CIBW_TEST_REQUIRES: pytest pytest-xdist stim~=1.15 sinter pygltflib
       CIBW_TEST_COMMAND: pytest -n auto {project}/src
+      CIBW_REPAIR_WHEEL_COMMAND_WINDOWS: "delvewheel repair --add-path D:\\a\\chromobius\\chromobius\\dist
+;D:\\a\\chromobius\\chromobius -w {dest_dir} {wheel}"
       CIBW_PRERELEASE_PYTHONS: 1
       CIBW_BUILD_VERBOSITY: ${{inputs.debug && 1 || ''}}
       CIBW_ENVIRONMENT: ${{inputs.debug && 'PIP_VERBOSE=1' || ''}}
