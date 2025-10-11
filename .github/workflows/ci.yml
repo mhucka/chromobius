@@ -100,8 +100,8 @@ jobs:
       CIBW_ARCHS: ${{matrix.build.arch}}
       CIBW_TEST_REQUIRES: pytest pytest-xdist stim~=1.15 sinter pygltflib
       CIBW_TEST_COMMAND: pytest -n auto {project}/src
-      CIBW_REPAIR_WHEEL_COMMAND_WINDOWS: "delvewheel repair --add-path D:\\a\\chromobius\\chromobius\\dist
-;D:\\a\\chromobius\\chromobius -w {dest_dir} {wheel}"
+      CIBW_REPAIR_WHEEL_COMMAND_WINDOWS: 'delvewheel repair -v --add-path "D:\\a\\chromobius\\chromobius\\dist
+;D:\\a\\chromobius\\chromobius" -w {dest_dir} {wheel}'
       CIBW_PRERELEASE_PYTHONS: 1
       CIBW_BUILD_VERBOSITY: ${{inputs.debug && 1 || ''}}
       CIBW_ENVIRONMENT: ${{inputs.debug && 'PIP_VERBOSE=1' || ''}}
