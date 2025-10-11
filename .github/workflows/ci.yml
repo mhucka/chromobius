@@ -95,7 +95,7 @@ jobs:
           {os: windows-latest, dist: cp314-win_arm64, arch: ARM64},
         ]
     env:
-      # MACOSX_DEPLOYMENT_TARGET: ${{matrix.build.target}}
+      MACOSX_DEPLOYMENT_TARGET: ${{matrix.build.target}}
       CIBW_BUILD: ${{matrix.build.dist}}
       CIBW_ARCHS: ${{matrix.build.arch}}
       CIBW_TEST_REQUIRES: pytest pytest-xdist stim~=1.15 sinter pygltflib
