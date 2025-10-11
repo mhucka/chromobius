@@ -66,8 +66,7 @@ FetchContent_Declare(stim
         GIT_TAG 1320ad7eac7de34d2e9c70daa44fbc6d84174450) # v1.15.dev0 (what PyMatching 2.2.2 uses)
 FetchContent_GetProperties(stim)
 if(NOT stim_POPULATED)
-    FetchContent_Populate(stim)
-    add_subdirectory(${stim_SOURCE_DIR})
+  FetchContent_MakeAvailable(stim)
 endif()
 
 FetchContent_Declare(pymatching
